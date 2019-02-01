@@ -2,16 +2,12 @@ package com.firstsource.doctor.domain;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "clinic")
+@Document(collection = "region")
 @Data
-public class Clinic {
+public class Region {
     @Id
     private String id;
-    private String address;
-    private String phone;
-    @DBRef
-    private Region region;
+    private String title;
 }
