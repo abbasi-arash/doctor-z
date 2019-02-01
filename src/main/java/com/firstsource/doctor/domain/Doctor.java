@@ -14,7 +14,7 @@ public class Doctor {
     private String id;
     private String name;
     @DBRef
-    private List<Speciality> specialties;
+    private List<Speciality> specialities;
     @DBRef
     private List<Appointment> appointments;
 
